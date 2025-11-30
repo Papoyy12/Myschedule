@@ -6,7 +6,63 @@
   <title>Lupa Password - Step 3</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="lupa3.css">
+  <style>
+    * {
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: url('https://www.polibatam.ac.id/wp-content/uploads/2022/07/MG_8893-scaled.jpg') center/cover no-repeat;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.43);
+      backdrop-filter: blur(10px);
+      border-radius: 40px;
+      border: none;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      width: 100%;
+    }
+    .logo {
+      width: 100px;
+      margin: 0 auto 20px;
+      display: block;
+    }
+    .card-title {
+      color: #845512;
+      font-weight: 600;
+    }
+    .form-control {
+      border-radius: 30px;
+      border: 1px solid #E2C892;
+      padding: 10px 20px;
+    }
+    .form-control:focus {
+      border-color: #845512;
+      box-shadow: 0 0 10px rgba(132, 85, 18, 0.3);
+      transform: scale(1.02);
+    }
+    .btn-primary {
+      background-color: #E2C892;
+      border: none;
+      border-radius: 30px;
+      padding: 10px;
+      font-weight: 600;
+      width: 100%;
+    }
+    .btn-primary:hover {
+      background-color: #845512;
+      transform: scale(0.98);
+    }
+    label {
+      font-weight: 600;
+      color: #0e0e0e;
+      margin-bottom: 8px;
+    }
+  </style>
 </head>
 <body>
 
@@ -90,7 +146,7 @@
 
     // Kalau semua validasi lolos
     alert('Password berhasil direset!');
-    window.location.href = 'login.php';
+    window.location.href = 'login.html';
   });
 </script>
 
