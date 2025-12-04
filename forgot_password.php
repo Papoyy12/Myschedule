@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <form method="POST">
                             <div class="mb-3">
                                 <label>Username</label>
-                                <input type="text" name="username" class="form-control" placeholder="Masukkan NIM anda" required>
+                                <input type="text" name="username" class="form-control" placeholder="Masukkan username anda" required>
                             </div>
 
                             <div class="mb-3">
