@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $user = $_SESSION['reset_username'];
 
         // Update password
-        mysqli_query($koneksi, "UPDATE user SET password='$newPassword' WHERE username='$user'");
+        mysqli_query($koneksi, "UPDATE users SET password='$newPassword' WHERE username='$user'");
 
         // Hapus session reset
         session_unset();

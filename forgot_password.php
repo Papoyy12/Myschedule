@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $contact  = mysqli_real_escape_string($koneksi, $_POST['contact']);
 
     // Cek user & contact
-    $cek = mysqli_query($koneksi, "SELECT * FROM user WHERE username='$username' AND contact='$contact'");
+    $cek = mysqli_query($koneksi, "SELECT * FROM users WHERE username='$username' AND contact='$contact'");
     
     if (mysqli_num_rows($cek) > 0) {
 
